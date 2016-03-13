@@ -159,7 +159,7 @@ protected void onActivityResult(int requestCode, int resultCode, Intent data) {
 
 提到生命周期首先想到的果断应当就是这个生命周期图了（显示在方框中的就是能实现的各种回调方法）：
 
-![](http://www.auooo.com/wp-content/uploads/2016/03/activity_lifecycle.png)
+![](https://github.com/auooo/AndroidReadingNotes/blob/master/android_activity/activity_lifecycle.png)
 
 一个 activity 主要有三种基本状态：
 * Resumed: activity 在屏幕前台运行并且有用户焦点(该状态有时候也被成为 "running")
@@ -244,7 +244,7 @@ public class ExampleActivity extends Activity {
 
 下图展现了 activity 恢复到前台运行状态的两种方式：
 
-![](http://www.auooo.com/wp-content/uploads/2016/03/restore_instance.png)
+![](https://github.com/auooo/AndroidReadingNotes/blob/master/android_activity/restore_instance.png)
 
 >注:并不能保证 [onSaveInstanceState()][onSaveInstanceState] 在 activity 被销毁 (destroyed) 前一定被调用，因为有时候并没有保存状态信息（例如用户按下后退按键结束一个 activity，这时用户就是准备结束这个 activity 的）。如果系统调用了 [onSaveInstanceSteate()][onSaveInstanceState]，会在 [onStop()][onStop] 之前调用，也有可能在 [onPause()][onPause] 之前调用。
 
